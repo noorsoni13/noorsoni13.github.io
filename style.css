@@ -1,0 +1,65 @@
+.widgets{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 100%;margin: 20px auto;
+  box-sizing: border-box;
+    }
+
+.calender{
+  background-color: blue;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 2px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+}
+
+.weather{
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 2px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.calculator{
+  background-color: yellow;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 2px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+body{
+  background-color: green;
+  background-size: cover;
+  background-position: center;
+}
+
+body h1{
+    text-align: center;
+    font-family: "Georgia", serif;
+    color: white;
+    padding: 20px;
+
+canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
