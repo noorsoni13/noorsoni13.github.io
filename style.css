@@ -52,7 +52,27 @@ body{
   background-position: center;
 }
 
-body h1{
+
+body h1 {
+  text-align: center;
+  font-family: "Georgia", serif;
+  color: white;
+  padding: 20px;
+}
+
+#sketch-container {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  margin: 30px auto;
+}
+
+#sketch-container canvas {
+  display: block;
+}
+
+/*removed*/
+/*body h1{
     text-align: center;
     font-family: "Georgia", serif;
     color: white;
@@ -63,3 +83,5 @@ canvas{
     top: 0;
     left: 0;
     z-index: -1;
+
+*/
