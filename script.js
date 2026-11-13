@@ -19,10 +19,7 @@ function keyPressed() {
 
   return false; // Prevent arrow keys from scrolling
 }
-function preload() {
-  song = loadSound("can my indie game soundtrack compare with Toby Fox - Jacob Tantleff (320k).mp3");
-  bell = loadSound("boxing bell sound effect - Sound Effect (320k).mp3");
-} //preload
+
 function rightButton() {
   if (directionIndex != 2) {
     directionIndex = 0;
@@ -95,12 +92,32 @@ function strt() {
   loop();
     song.play();
 }
+
+
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight);
-  canvas.position(0, 0);
+/*
+  song = await loadSound("superM.mp3");
+  bell = await loadSound("explsn.mp3");
+*/
+
+  song = new Audio("superM.mp3");
+  bell = new Audio("explsn.mp3");
+
+
+
+/*  
+canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0, 0);  <--top left behind everything??
   canvas.style('z-index', '-1');
+*/
+
+//new:
+const canvas = createCanvas(400, 500);
+canvas.parent("sketch-container");
   angleMode(RADIANS);
     
+
+
   noLoop();
   frameRate(10);
   cX[0] = 35;
@@ -111,6 +128,9 @@ function setup() {
   //cY[2] = 15;
   plotFood();
   button = createButton("start!");
+//added
+button.parent("sketch-container");
+
   button.mouseClicked(strt);
   button.size(100, 50);
   button.position(10, 420);
@@ -119,6 +139,10 @@ function setup() {
 
  //up button
  button = createButton("U");
+//added
+button.parent("sketch-container");
+
+
  button.mouseClicked(upButton);
  button.size(60, 30);
  button.position(230, 410);
@@ -126,6 +150,9 @@ function setup() {
  button.style("font-size", "18px");
  //down button
  button = createButton("D");
+//added
+button.parent("sketch-container");
+
  button.mouseClicked(downButton);
  button.size(60, 30);
  button.position(230, 460);
@@ -133,6 +160,10 @@ function setup() {
  button.style("font-size", "18px");
  //left button
  button = createButton("L");
+//added
+button.parent("sketch-container");
+
+
  button.mouseClicked(leftButton);
  button.size(60, 30);
  button.position(150, 440);
@@ -140,6 +171,10 @@ function setup() {
  button.style("font-size", "18px");
  //right button
  button = createButton("R");
+//added
+
+
+button.parent("sketch-container");
  button.mouseClicked(rightButton);
  button.size(60, 30);
  button.position(310, 440);
