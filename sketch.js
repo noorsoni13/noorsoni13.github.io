@@ -1,49 +1,4 @@
 
-None selected
-
-Skip to content
-Using TDSB Mail with screen readers
-5 of 958
-see attached I tried to comment in changes
-Inbox
-
-Jimenez, Andrew <andrew.jimenez@tdsb.on.ca>
-Attachments
-Thu, Nov 12, 10:37 PM (14 hours ago)
-to me
-
-Hi Harshnoor,
-
-Great work!
-
-Just go home.
-
-I promised I would do this, so it is done.
-
-I will send the sketch.js as a text file as gmail will not allow javascript attachments for security reasons.  Just be sure to rename it as Sketch.js from sketch.txt
-
-It works.
-
-Thank you,
-
-Mr. J.
-image.png
-
---
-Andrew Jimenez
-Teacher, Birchmount Park C.I.
-416-396-6704
- 5 Attachments
-  •  Scanned by Gmail
-
-Soni, Harshnoor <350351663@tdsb.ca>
-Thu, Nov 12, 10:37 PM (14 hours ago)
-to Andrew
-
-Awesome, thank you so much!
-sketch.txt
-100%
-console.log("js is working!");
 
 let song;
 let bell;
